@@ -91,21 +91,21 @@ def to_typed_array_spec(v):
         max = v.max()
         min = v.min()
         if max <= int8max and min >= int8min:
-            v = v.astype(get_module("numpy.int8", should_load=False))
+            v = v.astype("int8")
         elif max <= int16max and min >= int16min:
-            v = v.astype(get_module("numpy.int16", should_load=False))
+            v = v.astype("int16")
         elif max <= int32max and min >= int32min:
-            v = v.astype(get_module("numpy.int32", should_load=False))
+            v = v.astype("int32")
         else:
             return v
 
     elif dtype == "uint64":
         if max <= uint8max and min >= 0:
-            v = v.astype(get_module("numpy.uint8", should_load=False))
+            v = v.astype("uint8")
         elif max <= uint16max and min >= 0:
-            v = v.astype(get_module("numpy.uint16", should_load=False))
+            v = v.astype("uint16")
         elif max <= uint32max and min >= 0:
-            v = v.astype(get_module("numpy.uint32", should_load=False))
+            v = v.astype("uint32")
         else:
             return v
 
