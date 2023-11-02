@@ -1,22 +1,13 @@
----
-jupyter:
-  jupytext:
-    notebook_metadata_filter: all
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.3'
-      jupytext_version: 1.14.1
-  kernelspec:
-    display_name: Python 3
-    language: python
-    name: python3
-  language_info:
-    codemirror_mode:
-      name: ipython
-      version: 3
-    file_extension: .py
-    mimetype: text/x-python
+import plotly.graph_objects as go  
+  
+data = [[175, 438.42, 414.32],  
+        [200, 463, 445.7],  
+        [225, 483.9, 473.6],  
+        [250, 523, 513],  
+        [275, 566, 559],  
+        [300, 613, 608],  
+        [325, 659, 654],  
+        [350, 701, 697]]
     name: python
     nbconvert_exporter: python
     pygments_lexer: ipython3
